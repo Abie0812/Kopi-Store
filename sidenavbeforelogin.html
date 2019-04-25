@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kopi Store</title>
+    <script src="libraries/jquery/jquery.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="libraries/materialize/css/materialize.css">
+    <script src="libraries/materialize/js/materialize.js"></script>
+    <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="libraries/slick/slick.css">
+    <script src="libraries/slick/slick.js"></script>
+    <meta name="description" content="" />
+</head>
+<body>
+<div class="main">
+    <header>
+        <ul class="sidenav" id="slide_out">
+            <img src="images/assets/bg-navbar.jpg" alt="Abie" style="width: 100%;">
+            <div class="container login-section-on-sidenav">
+                <a href="register.html" class="btn waves-effect waves-light btn-on-sidenav mb-10">Daftar</a>
+                <a href="login.html" class="btn waves-effect waves-light btn-on-sidenav mt-10">Login</a>
+            </div>
+            <div class="container">
+                <div class="divider"></div>
+            </div>
+            <li><a class="smooth-scroll" href="#home-section"><i class="material-icons">home</i> Home</a></li>
+            <li><a class="smooth-scroll" href="#menu-section"><i class="material-icons">room_service</i> Menu</a></li>
+            <li><a class="smooth-scroll" href="#keranjang-section"><i class="material-icons">shopping_cart</i> Keranjang</a></li>
+        </ul>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper white ">
+                    <a href="#" class="sidenav-trigger" data-target="slide_out"><i class="burger-icon material-icons">menu</i></a>
+                    <a href="#" class="brand-logo center"><img src="images/icon-coffee.png"></a>
+                    <ul class="right">
+                        <li><a href="#"><i class="material-icons">notifications</i></a></li>
+                        <li><a href="#"><i class="material-icons">shopping_cart</i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+    </main>
+</div>
+<script type="application/javascript">
+    // Sidenav
+    const slide_menu = document.querySelectorAll(".sidenav");
+    M.Sidenav.init(slide_menu,{});
+</script>
+</body>
+</html>

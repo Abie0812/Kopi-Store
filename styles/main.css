@@ -2,7 +2,7 @@
     background-color: #efebe9;
     max-width: 425px;
     width: 425px;
-    min-height: 800px;
+    min-height: 650px;
     margin: auto;
     box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
 }
@@ -11,6 +11,23 @@ nav ul li a{ color: #5d4037; }
 img { max-width: 425px; }
 .row { margin-bottom: 0px !important; }
 .burger-icon { color: #5d4037; }
+.register-section {
+    padding-top: 25px;
+    background-color: #FFF;
+    min-height: 10px;
+}
+.login-section {
+    padding-top: 25px;
+    background-color: #FFF;
+    min-height: 600px;
+}
+.have-account-forgot-password {
+    position: relative;
+    top: -40px;
+}
+.have-account-forgot-password a {
+    color: #757575 !important;
+}
 .point-section {
     background-color: #FFF;
     min-height: 40px;
@@ -140,6 +157,52 @@ img { max-width: 425px; }
     top: 2px;
 }
 
+
+.sidenav .card .card-image img {
+    height: auto;
+}
+
+.sidenav .card .card-image .card-title {
+    background-color: transparent;
+    padding: 5px !important;
+    height: 80px;
+}
+
+.btn-on-sidenav {
+    width: 100%;
+    text-transform: capitalize !important;
+    background-color: #a1887f !important;
+}
+.login-section-on-sidenav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.text-on-sidenav {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    bottom: -12px;
+}
+
+.btn-on-login {
+    width: 100%;
+    text-transform: capitalize !important;
+    background-color: #a1887f !important;
+    position: relative;
+    top: -20px;
+}
+/*================================================*/
+/*                    Spacing                     */
+/*================================================*/
+.mb-10 { margin-bottom: 10px; }
+.mt-10 { margin-top: 10px; }
+
+
+/*================================================*/
+/*                    Responsive                  */
 /*================================================*/
 @media only screen and (max-width: 375px) {
     .main { width: 375px; }

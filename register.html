@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kopi Store</title>
+    <script src="libraries/jquery/jquery.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="libraries/materialize/css/materialize.css">
+    <script src="libraries/materialize/js/materialize.js"></script>
+    <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="libraries/slick/slick.css">
+    <script src="libraries/slick/slick.js"></script>
+    <meta name="description" content="" />
+</head>
+<body>
+<div class="main">
+    <header>
+        <ul class="sidenav" id="slide_out">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/assets/bg-navbar.jpg" alt="Abie" style="width: 100%;">
+                    <span class="card-title">
+                        <div class="row">
+                             <div class="col s4">
+                                 <img style="border-radius: 50% !important; border: 3px solid #efebe9;" src="images/assets/img-profile.jpg" alt="img-profile"> <!-- notice the "circle" class -->
+                             </div>
+                            <div class="col s8">
+                                <div class="text-on-sidenav">
+                                    <span style="display: block;">Jennie</span>
+                                    <span><i class="material-icons">check_circle</i> <i>verified account</i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <li><a class="smooth-scroll" href="#home-section"><i class="material-icons">home</i> Home</a></li>
+            <li><a class="smooth-scroll" href="#menu-section"><i class="material-icons">room_service</i> Menu</a></li>
+            <li><a class="smooth-scroll" href="#keranjang-section"><i class="material-icons">shopping_cart</i> Keranjang</a></li>
+            <li><a class="smooth-scroll" href="#akun-section"><i class="material-icons">person</i> Akun</a></li>
+            <li><a class="smooth-scroll" href="#navigation-section"><i class="material-icons">gps_fixed</i> Lacak Pesanan</a></li>
+            <li><a class="smooth-scroll" href="#logout-section"><i class="material-icons">exit_to_app</i> Logout</a></li>
+        </ul>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper white ">
+                    <a href="index.html" class="sidenav-trigger"><i class="burger-icon material-icons">arrow_back</i></a>
+                    <!--<a href="#" class="left" style="color: #252525;">Kembali</a>-->
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="register-section">
+            <!--<h6 class="title-section">Login</h6>-->
+            <div class="container">
+                <span class="title-section mt-10">Daftar</span>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="name" type="text">
+                        <label for="email">Nama</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="phone_number" type="number">
+                        <label for="phone_number">No. Ponsel</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="email">Password</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="confirmation_password" type="password" class="validate">
+                        <label for="email">Konfirmasi password</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <textarea id="address" class="materialize-textarea"></textarea>
+                        <label for="address">Alamat</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <a href="#" class="btn waves-effect waves-light btn-on-login">Submit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<script type="application/javascript">
+    // Sidenav
+    const slide_menu = document.querySelectorAll(".sidenav");
+    M.Sidenav.init(slide_menu,{});
+</script>
+</body>
+</html>
